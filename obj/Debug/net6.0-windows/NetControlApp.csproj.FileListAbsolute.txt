@@ -1,0 +1,4 @@
+C:\perso\ARP\obj\Debug\net6.0-windows\NetControlApp.csproj.AssemblyReference.cache
+C:\perso\ARP\obj\Debug\net6.0-windows\NetControlApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\perso\ARP\obj\Debug\net6.0-windows\NetControlApp.csproj.CoreCompileInputs.cache
+C:\perso\ARP\obj\Debug\net6.0-windows\NetControlApp.sourcelink.json

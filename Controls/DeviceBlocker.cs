@@ -15,16 +15,28 @@ namespace NetControlApp
 
         public void BlockDevice(string targetIP)
         {
-            // Utiliser ARPManager pour bloquer l'appareil
-            arpManager.BlockDevice(targetIP);
-            Console.WriteLine($"Device {targetIP} has been blocked.");
+            try
+            {
+                arpManager.BlockDevice(targetIP);
+                Console.WriteLine($"Device {targetIP} has been blocked.");
+            }
+            catch (Exception ex)
+            {
+                FormHelpers.DisplayError($"Failed to block device: {ex.Message}");
+            }
         }
 
         public void UnblockDevice(string targetIP)
         {
-            // Utiliser ARPManager pour débloquer l'appareil
-            arpManager.UnblockDevice(targetIP);
-            Console.WriteLine($"Device {targetIP} has been unblocked.");
+            try
+            {
+                arpManager.UnblockDevice(targetIP);
+                Console.WriteLine($"Device {targetIP} has been unblocked.");
+            }
+            catch (Exception ex)
+            {
+                FormHelpers.DisplayError($"Failed to unblock device: {ex.Message}");
+            }
         }
     }
 }

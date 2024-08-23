@@ -10,10 +10,9 @@ namespace NetControlApp
         private DeviceBlocker deviceBlocker;
 
         public MainForm()
-        {
-            InitializeComponent();
-            InitializeNetworkComponents();
-        }
+                {
+                    InitializeComponent();
+                }
 
         private void InitializeNetworkComponents()
         {
