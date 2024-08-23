@@ -23,7 +23,7 @@ namespace NetControlApp
                 return;
             }
 
-            var device = devices[0]; // Choisissez votre interface réseau (ajoutez une logique pour sélectionner correctement)
+            var device = devices[0]; 
             arpManager = new ARPManager(device);
             networkMonitor = new NetworkMonitor(device);
             deviceBlocker = new DeviceBlocker(arpManager);
